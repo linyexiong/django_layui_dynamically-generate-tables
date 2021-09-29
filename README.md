@@ -51,20 +51,20 @@ django之Layui界面点击弹出个对话框并请求逻辑生成分页的动态
 ![image](https://user-images.githubusercontent.com/10420128/135019548-371eb626-b177-4147-b952-ced46c2fea92.png)
 
 二、接着，开始写相关代码
+1、首先，在template目录下，新建一个user目录，新建界面user_list.html，就一个空的表格，底下有个按钮
 
-1、首先，在user模块底下的views.py下，定义一个UserQuery类，写相关的逻辑处理代码：
-
-![image](https://user-images.githubusercontent.com/10420128/135225694-546f3382-cbd4-4d75-90c3-ac1bdd2bbe38.png)
-
-2、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候界面调用时用到：
-
-![image](https://user-images.githubusercontent.com/10420128/135226390-11ec8dd8-57b6-44d9-8115-b9bdf516313f.png)
-
-3、接着要在django_test底下的urls.py中，配置user模块url的相关路径，这样页面才能正常调用：
-
-![image](https://user-images.githubusercontent.com/10420128/135235153-1ee99d35-7b17-4535-96d5-0d16e4346722.png)
-
-4、接着，在template目录下，新建一个user目录，新建界面user_list.html，就一个空的表格，底下有个按钮，点击后查询用户的数据，产生一个动态表格，其中用了layui
+2、接着，在user模块底下的views.py下，定义一个UserList类，写访问用户页面的逻辑处理代码：
 
 
-之前在csdn写了博客，简单粗略的写了，地址：https://blog.csdn.net/u012561176/article/details/104008766
+3、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候访问用户列表界面用到：
+
+![image](https://user-images.githubusercontent.com/10420128/135237362-20460e05-42b0-408d-a3d9-70afdc418928.png)
+
+
+4、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候界面调用时用到：
+
+
+
+5、接着要在django_test底下的urls.py中，配置user模块url的相关路径，这样页面才能正常调用：
+
+
