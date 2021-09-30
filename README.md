@@ -1,8 +1,8 @@
 # django_layui_dynamically-generate-tables
 
-Click on the layui interface of Django to pop up a dialog box and request logic to generate paged dynamic tables 
+The Django environment is built. The page template uses layui to click the button, pop up a dialog box and request logic to generate paged dynamic tables
 
-django之Layui界面点击弹出个对话框并请求逻辑生成分页的动态表格
+搭建django环境，页面模板用了layui，实现了点击按钮，弹出个对话框并请求逻辑生成分页的动态表格
 
 一、django项目环境搭建
 
@@ -53,18 +53,15 @@ django之Layui界面点击弹出个对话框并请求逻辑生成分页的动态
 二、接着，开始写相关代码
 1、首先，在template目录下，新建一个user目录，新建界面user_list.html，就一个空的表格，底下有个按钮
 
-2、接着，在user模块底下的views.py下，定义一个UserList类，写访问用户页面的逻辑处理代码：
+2、接着，在user模块底下的views.py下，定义一个UserList类，写访问用户页面的逻辑处理代码，以及UserQuery类，查询用户具体信息：
 
+![image](https://user-images.githubusercontent.com/10420128/135398604-bb09e09f-3971-4950-82ba-d00cfdd67b24.png)
 
-3、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候访问用户列表界面用到：
+3、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候访问用户列表界面、用户查询可以用到：
 
-![image](https://user-images.githubusercontent.com/10420128/135237362-20460e05-42b0-408d-a3d9-70afdc418928.png)
+![image](https://user-images.githubusercontent.com/10420128/135398684-24543e9b-6736-43a0-8669-8e32d5b7a0ea.png)
 
+4、接着要在django_test底下的urls.py中，配置user模块url的相关路径，这样才能正常调用：
+![image](https://user-images.githubusercontent.com/10420128/135398754-9145b896-0d4f-4684-a477-3c45f731baef.png)
 
-4、接着，在user模块下新建一个urls.py文件，相当于一个路径请求，到时候界面调用时用到：
-
-
-
-5、接着要在django_test底下的urls.py中，配置user模块url的相关路径，这样页面才能正常调用：
-
-
+5、
