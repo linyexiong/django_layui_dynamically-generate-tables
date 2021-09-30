@@ -64,4 +64,19 @@ The Django environment is built. The page template uses layui to click the butto
 4、接着要在django_test底下的urls.py中，配置user模块url的相关路径，这样才能正常调用：
 ![image](https://user-images.githubusercontent.com/10420128/135398754-9145b896-0d4f-4684-a477-3c45f731baef.png)
 
-5、
+5、接着在数据库test底下的tbl_user_info插入两条数据，脚本如下：
+
+INSERT INTO `test`.`tbl_user_info` (`username`, `age`, `sex`, `mobile`, `address`, `createtime`) VALUES ('小熊', 25, '男', 18888888888, '地球村', '2021-09-30 14:12:00');
+
+INSERT INTO `test`.`tbl_user_info` (`username`, `age`, `sex`, `mobile`, `address`, `createtime`) VALUES ('小花', 20, '女', 16666666666, '地球村某一角', '2021-09-30 14:13:00');
+
+6、接着，运行项目，访问地址：http://127.0.0.1:8000/user/list/ 如下图所示：
+
+![image](https://user-images.githubusercontent.com/10420128/135428697-ee4ac094-aee2-4a17-af05-06e277e2727f.png)
+
+7、点击用户数据展示，如下图所示：
+
+![image](https://user-images.githubusercontent.com/10420128/135428815-03612e2b-836f-4471-b420-85bcf6a26629.png)
+
+
+
